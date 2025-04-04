@@ -1,2 +1,2 @@
 # gen711_final
-hi
+Project: Bacterial Genome Assembly
