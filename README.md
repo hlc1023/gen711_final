@@ -39,6 +39,13 @@ Multiple different programs were used to assess the genome. This includes QUAST 
 This program is important for assessing the genes in the genome. Using the program outputs many files which puts different genes and what they code for into different files. The most important for this project is the nucleotide fasta file which was used to find the 16S sequences of the samples. The 16S sequence for sample 02 contained two partial 16S sequences, and sample 04 contained one full 16S sequence.
 
 ### BLAST
-This tool was used to identify the species of the samples.
+This tool was used to identify the species of the samples. It was used a a few different ways. First, the nucleotide database on the NCBI website was used to paste the 16S sequence into to search for the species. Then BLAST was used in the command line to search for the species using the 16S sequence. Lastly, the entire genome assembly was BLASTed in the command line to assign a taxonomy to every sequence.
 
-'/c/Users/hacon/Pictures/Screenshots/Screenshot 2025-05-11 100116.png'
+### BWA and Samtools
+The contigs.fasta file was used as a reference assembly to map the forward and reverse reads to it to create a SAM file. Samtools was then used to convert this to a BAM file, and to also create a coverage table.
+
+### Blobtools
+This program created blobplots which gave visual graphs and information about the data. Although this also created many files, the most important one was titled 'blob_out.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0' which plotted the 'GC, coverage, taxonomy, and contigs lengths' on one graph.
+
+### Assembly Filtering
+One of the tables created from using blobtools was used to filter the genome based on length and coverage
