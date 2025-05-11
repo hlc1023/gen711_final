@@ -1,10 +1,12 @@
 #!/bin/bash
 
+raw_reads= $(~/final/genome_back/*gz)
+
 echo "Number of raw reads for each file:"
-	grep -c '^@' ~/genome/*gz
+	grep -c '^@' $raw_reads
 
 echo "Total number of raw reads in all four files:"
-	total_lines=$(cat ~/genome/*gz | wc -l)
+	total_lines=$(cat $raw_reads | wc -l)
 	total_reads=$(( $total_lines / 4 ))
 	echo $total_reads
 
