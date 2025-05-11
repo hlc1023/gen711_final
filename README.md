@@ -23,8 +23,8 @@ The starting data includes two sets of raw fastq files for two unknown bacteria.
 ## Methods
 
 ### FastQC
-The FastQC program is used on fastq files to analyze the read qualities and the composition of base pairs in the reads. Using the program, the forward and reverse read files are inputted into the program, and the output is directed to a new directory. This program gives a zip file and an html file that contains many graphs that give a lot of analytical data about the reads.
-This program is used twice in this pipeline. The first time is with the raw reads, and the second time is with the trimmed reads once the adapter sequences are removed. The HTML files were downloaded using sftp. Comparing this data gives information about how the quality of the data and composition of the base pairs of the reads changed after putting them throught the trimming program.
+The FastQC program is used on fastq files to analyze the read qualities and the composition of base pairs in the reads. Using the program, the forward and reverse read files were inputted into the program, and the output was directed to a new directory. This program gave a zip file and an html file that contains many graphs that give a lot of analytical data about the reads.
+This program is used twice in this pipeline. The first time is with the raw reads, and the second time is with the trimmed reads once the adapter sequences are removed. The html files were downloaded using sftp. Comparing this data gives information about how the quality of the data and composition of the base pairs of the reads changed after putting them throught the trimming program.
 
 ### Trimmomatic
 The trimmomatic program was run twice. Once on the forward/reverse reads for sample 02, and once on the forward/reverse reads for sample 04. This program trims the raw reads by removing adapter sequences and low quality base pairs. The output went into a directory called trimmed_reads. Four files were created using the program: paired forward and reverse fastq files, and two unpaired fastq files.
@@ -40,3 +40,5 @@ This program is important for assessing the genes in the genome. Using the progr
 
 ### BLAST
 This tool was used to identify the species of the samples.
+
+'/c/Users/hacon/Pictures/Screenshots/Screenshot 2025-05-11 100116.png'
