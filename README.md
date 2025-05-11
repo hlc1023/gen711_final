@@ -1,15 +1,18 @@
 # Project: Bacterial Genome Assembly
 
 ## Background
-The starting data includes two sets of raw fastq files for two unknown bacteria. This includes a forward and a reverse read file for each set. The ultimate goal of the project is to identify the species of bacteria and create figures analyze and visualize the genome.
+Identification of two unknown bacteria species.  
+Hannah Conway  
+The starting data includes two sets of raw fastq files for two unknown bacteria. This includes a forward and a reverse read file for each set. These sample were sequenced using Illumina HiSeq 2500, paired-end, 250 bp sequencing reads.  
+The ultimate goal of the project is to identify the species of bacteria and create figures that analyze and visualize the genome.
 
 ### Basic Read Assessment
 
 #### Number of raw reads for each file:
-02_S65_L001_R1_001.fastq.gz: 38429
-02_S65_L001_R2_001.fastq.gz: 37827
-04_S62_L001_R1_001.fastq.gz: 14476
-04_S62_L001_R2_001.gastq.gz: 14497
+02_S65_L001_R1_001.fastq.gz: 38429  
+02_S65_L001_R2_001.fastq.gz: 37827  
+04_S62_L001_R1_001.fastq.gz: 14476  
+04_S62_L001_R2_001.gastq.gz: 14497  
 
 #### Total number of raw reads in all four files:
 2747202
@@ -19,6 +22,7 @@ The starting data includes two sets of raw fastq files for two unknown bacteria.
 
 #### Average coverage:
 196
+
 
 ## Methods
 
@@ -48,4 +52,13 @@ The contigs.fasta file was used as a reference assembly to map the forward and r
 This program created blobplots which gave visual graphs and information about the data. Although this also created many files, the most important one was titled 'blob_out.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0' which plotted the 'GC, coverage, taxonomy, and contigs lengths' on one graph.
 
 ### Assembly Filtering
-One of the tables created from using blobtools was used to filter the genome based on length and coverage
+One of the tables created from using blobtools was used to filter the genome based on length and coverage. The ultimate filter criteria used was removing contigs shorter than 500 base pairs long, and those with less than 20 coverage. The contigs that were kept were put into a filtered.fasta file.
+
+
+## Results
+
+### FastQC Before and After Read Trimming
+The biggest differences in the plots given by the FastQC analysis is the adapter content graphs before and after the read trimming using trimmomatic.
+
+###
+blob_out.blobDB.json.bestsum.genus..p8.span.100.blobplot.bam0
