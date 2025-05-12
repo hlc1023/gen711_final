@@ -56,6 +56,5 @@ The biggest differences in the plots given by the FastQC analysis is the adapter
 ### blob_plots for species
 blob_out.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0  
 This file takes multiple information from the reads of the sample and plots it out onto a graph. The info that can be seen on this graph includes the taxonomy for each read, the coverage, GC, and length of the contigs. Each spot represents one read, with the size of the spot representing the contig length. On the graph for sample 02, it shows that most of the contigs belong to the genus Clostridiodes. In the graph for sample 04, most of the contigs belong to the genus Escherichia. There also appears to be more contamination in sample 04. The smaller orange spot located around the 10^0 coverage area on the graph show that there are shorter contigs that belong to organisms of other genera.
-![02](https://github.com/hlc1023/gen711_final/blob/main/02_blob_out.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
-![04](https://github.com/hlc1023/gen711_final/blob/main/04_blob_out.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
-
+![02](images/02_blob_out.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
+![04](images/04_blob_out.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
